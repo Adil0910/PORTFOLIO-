@@ -492,4 +492,10 @@ img.abut-image {
     z-index: 100;
     position: relative;
 }
+.abut-crcle{
+    background: black;
+}
+.line{
+    box-shadow: none;
+}
 }
