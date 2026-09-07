@@ -1,0 +1,40 @@
+.footer {
+  background: #fff;
+  color: #000000;
+  padding: 18px 10px;
+  text-align: center;
+  position: relative;
+  z-index: 3000;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer p {
+  font-size: 14px;
+  color: #000;
+margin-block: 12px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+ @media (max-width: 780px) {
+
+.footer {
+    background: #fff;
+    color: #000;
+    z-index: 3000;
+    padding: 0px;
+    width: 100%;
+    padding-block: 3px;
+    position: absolute;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+ }

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Google Fonts -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/txtanime.js/dist/txtanime.css">
+<script src="https://unpkg.com/txtanime.js/dist/txtanime.js"></script>
+
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <script>
+  const elements = document.querySelectorAll(".fadeScroll");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+
+        new TxtAnime(entry.target, {
+          mode: "word",      // har word alag fade hoga
+          effect: "fadeIn",  // fade-in animation
+          delay: 120,        // har word ka delay
+          duration: 600      // speed
+        });
+
+        observer.unobserve(entry.target); 
+      }
+    });
+  }, { threshold: 0.4 });
+
+  elements.forEach(el => observer.observe(el));
+</script>
+
+  </body>
+</html>
