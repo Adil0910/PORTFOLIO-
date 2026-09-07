@@ -37,7 +37,7 @@ const project = [
       title: "SEO Site",
       img: "/img/seo.png",
       link: "https://portfolio-adil-seven.vercel.app/",
-      tech: ["Frontend", "Backend", "Nodemailer"]
+      tech: ["On-Page", "Off-Page", "Technical"]
     },
      
     
