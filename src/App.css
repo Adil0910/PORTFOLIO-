@@ -455,6 +455,8 @@ h2.heading-home-wroks {
 }
 .project-card {
     width: 92%;
+    box-shadow: 0px 0px 3px gainsboro;
+    margin-bottom: 1rem;
 }
 .highlight-text-heading {
     padding-left: 2rem;
